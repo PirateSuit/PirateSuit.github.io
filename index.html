@@ -1,3 +1,210 @@
-<html>
-<h1>Hello there</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Roboto:300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/app.css" rel="stylesheet" />
+    <title>World Population | Portfolio</title>
+
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Home</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Visualizations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#analysis">Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- No defined header section -->
+
+    <!-- Main content goes here split into sections/fragments -->
+    
+    <main>
+
+        <!-- Utilizes flexbox styling not taught in class -->
+        <section class="fragment fragment-one">
+            
+                <h1> World Population </h1>
+                <h2> Predicting Yearly Change</h2>
+            
+
+
+        </section>
+        <section class="fragment fragment-onetwo" id="about">
+            <h2> Project <br />Overview </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <br>
+
+                        <!-- Edit this text with a brief intoduction / brand statement etc. -->
+                        <h5>
+                            In this project, we are attempting to use 2020 world population data to see what, if any, factors can predict the percentage change in a given country's population from 2019 to 2020.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="learn">
+                <!-- You could hyperlink this down with a smooth scroll -->
+                <br> <br> <br> <br>
+                <p> CHECK IT OUT </p>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
+        </section>
+        <section class="fragment2 fragment-three" id="projects">
+            <br><br><br>
+            <h3>Median Age vs Yearly Population Change</h3>
+            <hr class="title-underline">
+            <div class="container carousel-container">
+                <img src="assets/images/MedAge_vs_YearlyChange.PNG">
+                    <br><p><h7> The data show that the lower the median age of a country, the more likely it is to have a higher rate of population growth.</h7></p>
+                    </div>
+        </section>
+
+        <section class="fragment2 fragment-three">
+            <h3>Fertility Rate vs Yearly Population Change</h3>
+            <hr class="title-underline">
+            <div class="container carousel-container">
+                <img src="assets/images/FertRate_vs_YearlyChange.PNG">
+                <br><p><h7> Similar to median age, the data show that with a higher fertility rate, the growth of a countrys population will be higher as well. </h7></p>
+                </div>
+        </section>
+
+        <section class="fragment2 fragment-three">
+            <h3>Correlating both Fertility Rate and Median Age with Yearly Population Change</h3>
+            <hr class="title-underline">
+            <div class="container carousel-container">
+                <img src="assets/images/3D_fUn_TiMeS.PNG">   
+                <br><p><h7>A country with a higher fertility rate is likely to have a lower median age, and thus again correlate with a higher percentage change in population.</h7></p>
+                </div>
+        </section>
+
+        <section class="fragment-viz">
+
+            <h2>Tableau Visualizations</h2>
+
+        <div id="vizContainer"></div>
+        <script src="https://us-east-1.online.tableau.com/javascripts/api/tableau-2.min.js"></script>
+        <script>
+          var viz
+          function initViz() {
+            var containerDiv = document.getElementById("vizContainer"),
+            url = "https://public.tableau.com/views/World_Pop_Viz/ChangevsMedianAge?:language=en-US&:display_count=n&:origin=viz_share_link";
+      
+            viz = new tableau.Viz(containerDiv, url);
+          }
+          initViz();
+        </script>
+                    
+
+        </section>
+
+        <section class="fragment fragment-onethree" id="analysis">
+            <h2> Analysis <br />
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <br>
+
+                        <!-- Edit this text with a brief intoduction / brand statement etc. -->
+                        <h5>
+                            Here's where we write a little fun wrap up about how and why our project worked...or didn't.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="fragment fragment-onefour" id="signup">
+            <div class ="container">
+            <h4>Group</h4>
+            <hr class="title-underline">
+            </div>
+            <!-- Don't forget to swap out the universities and education to match your own-->
+            <div class="container">
+                <h5> David Zellmer</h5>
+                <p class="credential"></p>
+                <p> <a href="https://github.com/rattrapp">Github</a>
+                </p>
+                <h5> Rosalie Maass</h5>
+                <p class="credential"></p>
+                <p> <a href="https://github.com/RosalieMaass">Github</a>
+                </p>
+                <h5> Dan Pederson</h5>
+                <p class="credential"></p>
+                <p> <a href="https://github.com/PirateSuit">Github</a>
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="fragment fragment-six">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h6>team 6</h6>
+
+                        <!--update these links to match your own social media profiles -->
+                        <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/in" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="jttps://github.com/" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="mailto:<YOUREMAIL>" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        <p class="text-muted copyright">Morde Productions &copy; 2021 </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>
