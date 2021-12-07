@@ -38,6 +38,10 @@ h5 {
     font-size: 1.5rem;
 }
 
+h55 {
+    font-size: 1.2rem;
+}
+
 h7 {
     font-size: 2;
     text-align: center;
@@ -73,7 +77,7 @@ h7 {
     background: #333;
     background-image: linear-gradient(to right, rgb(0, 0, 0), #f39d9b, rgb(0, 0, 0));
     max-width: 350px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .fragment {
@@ -117,6 +121,7 @@ h7 {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    font-size: medium;
     padding: 300px 0;
 }
 
