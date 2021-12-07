@@ -45,6 +45,15 @@ h7 {
     color:rgb(0, 0, 0)
 }
 
+.viztext {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+
+}
+
 .btn-primary {
     background-color: #f08582;
     border-color: #f08582;
@@ -62,7 +71,7 @@ h7 {
     border: 0;
     height: 1px;
     background: #333;
-    background-image: linear-gradient(to right, #fff, #0e5eab, #fff);
+    background-image: linear-gradient(to right, rgb(0, 0, 0), #f39d9b, rgb(0, 0, 0));
     max-width: 350px;
     margin-bottom: 50px;
 }
@@ -108,13 +117,13 @@ h7 {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 200px 0;
+    padding: 300px 0;
 }
 
 .fragment-onefour {
     background-image: url("../images/prairie.jpg"); 
     background-color: #fae4c9;
-    color: #3595cc;
+    color: #353535;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -175,8 +184,8 @@ h7 {
     flex-direction: column
 }
 
-.fragment-three .carousel-caption {
-    color: #999
+.viztext-color {
+    color: rgb(0, 0, 0)
 }
 
 .fragment-three .custom-indicator {
@@ -237,14 +246,16 @@ h7 {
 
 .fragment-six {
     padding: 20px;
+    background-color:#3b2e1d;
 }
 
 .fragment-six h6 {
-    color: #0e5eab;
+    color: #f08582;
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 20px;
+    background-color:#3b2e1d;
     /* letter-spacing: 2px; */
 }
 .fragment-six .social-icon {
@@ -257,6 +268,15 @@ h7 {
 .fragment-six .copyright {
     margin: 10px 0;
     font-size: 0.8rem;
+}
+
+.fragment-seven {
+    color: blanchedalmond;
+    margin: auto;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    background-color:#3b2e1d;
 }
 
 .fragment-viz {
